@@ -1,11 +1,12 @@
+Attribute VB_Name = "Module1"
 Sub StockExercise():
 
     'Go to the first worksheet
 Worksheets(1).Activate
 
     'Define variables for worksheet loop
-Dim WS As Integer
-Dim SheetCount As Integer
+Dim WS As Double
+Dim SheetCount As Double
 
     'Sheet count
 SheetCount = Sheets.Count
@@ -31,7 +32,7 @@ Dim RowCount As Double
 RowCount = Cells(Rows.Count, 1).End(xlUp).Row
 
     'Define variables for tickers loop
-Dim TickerCounter As Integer
+Dim TickerCounter As Double
 Dim EarliestDate As Double
 Dim LatestDate As Double
 Dim OpenPrice As Double
@@ -189,3 +190,4 @@ Next WS
 Worksheets(1).Activate
 
 End Sub
+
