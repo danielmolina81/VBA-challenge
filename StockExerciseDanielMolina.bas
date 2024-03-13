@@ -1,4 +1,3 @@
-Attribute VB_Name = "Module1"
 Sub StockExercise():
 
     'Go to the first worksheet
